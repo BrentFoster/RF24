@@ -55,7 +55,7 @@ else ifeq "$(RPI)" "1"
 DRIVER_DIR=$(ARCH_DIR)/RPi
 OBJECTS+=bcm2835.o	
 # The recommended compiler flags for the Raspberry Pi
-CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=armv6zk -mtune=arm1176jzf-s
+CCFLAGS=-Ofast -mfpu=vfp -mfloat-abi=hard -march=armv7-a -mtune=arm1176jzf-s
 
 else
 DRIVER_DIR=$(ARCH_DIR)/BBB
